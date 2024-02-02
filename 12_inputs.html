@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inputs</title>
+    <style>
+      body {
+        background-color: #414141;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Inputs in HTML</h1>
+    <label for="fname">Enter your first name</label>
+    <input
+      type="text"
+      name=""
+      id="fname"
+      value="Abc"
+      placeholder="Enter your name"
+    />
+    <br />
+    <input type="reset" value="reset" />
+    <input type="week" name="" id="" />
+    <select name="editors" id="">
+      <option value="VS code">VS code</option>
+      <option value="Sublime Code">Sublime Code</option>
+    </select>
+    <!-- complex and rare used select options -->
+    <input list="editors" name="editor">
+    <datalist id="editors">
+        <option value="VS code">VS code</option>
+        <option value="Sublime Code">Sublime Code</option>
+    </datalist>
+    <!-- it is basically used for data send when hidden like tokens -->
+    <input type="hidden" name="">
+  </body>
+</html>

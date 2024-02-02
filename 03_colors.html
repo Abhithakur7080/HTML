@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colors</title>
+    <!-- external css priority-3 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- internal css priority-2 -->
+    <style>
+        body{
+            color: aqua;
+            background-color: #414141;
+        }
+        </style>
+  </head>
+  <body>
+    <!-- value from 0 to 255 -->
+    <!-- rgb(red, green, blue) r-red, g-green, b-blue -->
+    
+    <!-- hsl(color-wheels value-0 to 360, saturation 0 to 100%, lightness 0 to 100%) -->
+
+    <!-- value from 0 to 255  and alfa from 0 to 1-->
+    <!-- rgba(red, green, blue, alfa) -->
+    <!-- rgb(red, green, blue, alfa) r-red, g-green, b-blue -->
+    <!-- inline css using style on tag attribute -->
+    <!-- priority-1  -->
+    <h1 style="text-align: center; background-color: hsl(120, 60%, 50%); color: white">
+      this is colors
+    </h1>
+    <p>this is internal css</p>
+
+    <p>
+        <!-- blackquote tag -->
+        <blockquote cite="Elon musk">
+            this is my block quote
+        </blockquote>
+        <!-- quote tag -->
+        <q>This is my quote</q>
+        <!-- abbribiation tag -->
+        <abbr title="Hyper Text Markup Language">HTML</abbr>
+        <!-- address tag -->
+        <address>
+            What to do
+        </address>
+        <cite >This cite tag</cite>
+        <!-- bidirectional tag -->
+        <bdo dir="rtl">Ambululance</bdo>
+    </p>
+  </body>
+</html>

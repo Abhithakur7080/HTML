@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td, th{
+            border: 1px solid #000;
+            padding: 10px;
+        }
+        tr:nth-child(even){
+            background-color: #aaa;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- basic table -->
+    <table>
+        <!-- colgroup target column for styling -->
+        <colgroup>
+            <col span="2" style="background-color: greenyellow;"/>
+        </colgroup>
+        <!-- tr table rows -->
+      <tr>
+        <!-- th table highlight cell -->
+        <th>Country</th>
+        <th>Country CODE</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <!-- td table dimension cell -->
+        <td>India</td>
+        <td>IN</td>
+        <td>india@google.com</td>
+      </tr>
+      <tr>
+        <td>Unites States of America</td>
+        <td>USA</td>
+        <td>usa@google.com</td>
+      </tr>
+      <tr>
+        <td>Japan</td>
+        <td>JP</td>
+        <td>japan@google.com</td>
+      </tr>
+      <tr>
+        <td>China</td>
+        <td>CN</td>
+        <td>china@google.com</td>
+      </tr>
+      <tr>
+        <td>Russia</td>
+        <td>RS</td>
+        <td>russia@google.com</td>
+      </tr>
+    </table>
+    <hr>
+    <hr>
+    <hr>
+    <table>
+        <tr>
+            <!-- colspan join columns  -->
+          <th colspan="2">Country</th>
+          <!-- rowspan join rows -->
+          <td rowspan="2">India</td>
+          <td>Japan</td>
+        </tr>
+        <tr>
+          <th>Country Code</th>
+          <td>IN</td>
+          <td>JP</td>
+        </tr>
+      </table>
+      <hr>
+      <hr>
+      <hr>
+      <!-- optimized table -->
+      <table>
+        <!-- header part of table -->
+        <thead>
+          <tr>
+        <th>Country</th>
+        <th>Country CODE</th>
+        <th>Email</th>
+      </tr>  
+        </thead>
+        <!-- body part of table -->
+      <tbody>
+        <tr>
+        <td>India</td>
+        <td>IN</td>
+        <td>india@google.com</td>
+      </tr>
+      <tr>
+        <td>Unites States of America</td>
+        <td>USA</td>
+        <td>usa@google.com</td>
+      </tr>
+      <tr>
+        <td>Japan</td>
+        <td>JP</td>
+        <td>japan@google.com</td>
+      </tr>
+      <tr>
+        <td>China</td>
+        <td>CN</td>
+        <td>china@google.com</td>
+      </tr>
+      <tr>
+        <td>Russia</td>
+        <td>RS</td>
+        <td>russia@google.com</td>
+      </tr>
+      </tbody>
+      <!-- footer part of table -->
+      <tfoot>
+        <tr>
+            <td colspan="3">Thanks for visit my website any concern contact us 1800 0000 0000</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
